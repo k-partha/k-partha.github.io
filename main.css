@@ -5,11 +5,19 @@ body {
     padding-top: 10%;
     position: relative;
     font-family:"Times New Roman";
+    text-align: center;
+    color: MidnightBlue;
   }
 @media (max-width: 575.98px) {
     body {
         padding-top: 60px
     }
+  }
+@media (max-width: 768px) {
+    .col-sm-12 {
+      padding: 5%
+    }
+
 }
 
 html{
@@ -25,51 +33,29 @@ html{
     color: MidnightBlue;
     cursor: pointer;
 }
-/*
-.nav-link {
-    margin-right: 1em !important;
-} */
+
 .nav-link:hover {
     color: LightSalmon;
 }
 
 
-.custom-toggler .navbar-toggler-icon {
+.navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='MidnightBlue' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.custom-toggler .navbar-toggler .icon {
-  border-color: White;
-  right: : 100px;
-  position: absolute;
+.navbar-toggler:focus, .navbar-toggler:hover {
+    outline-color: MidnightBlue;
 }
-
 a:hover{
   color: LightSalmon;
 }
-.custom-toggler .navbar-toggler {
-  right: : 15px;
-  position: absolute;
-}
 
-.title1{
-  text-align: center;
-  color: MidnightBlue
-}
-
-
-.description{
-  text-align: center;
-}
 .description h1 {
-	color: MidnightBlue;
   font-size: 5rem;
 }
 @media (max-width: 350px) {
     .description h1 {
-        color: MidnightBlue;
         font-size: 3.5rem;
-        text-align: center;
     }
 }
 
@@ -89,37 +75,25 @@ a:hover{
     font-size: 0.75rem;
 }
 
-.container h1 {
-  color: MidnightBlue;
-  text-align: center;
-}
+
 .container h2 {
-  color: MidnightBlue;
-  text-align: center;
   font-size: 1.5em;
 }
 #project {
 	width: 70%;
-}
-
-
-#project p{
-  text-align: left;
-}
-#project h2{
   text-align: left;
 }
 
 #cv1, #project, #contactsocial {
   padding: 5%;
 }
-.container {
-  text-align: center;
-  color: MidnightBlue;
-}
+
 .nav-link.active {
 background-color: MidnightBlue;
 color: White;
+}
+.nav-link.active:hover {
+color: LightSalmon;
 }
 
 .description a{
@@ -136,5 +110,9 @@ color: White;
   color: White;
 }
 .footer-copyright a:hover{
+  color: LightSalmon;
+}
+
+#orange {
   color: LightSalmon;
 }
